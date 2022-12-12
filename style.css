@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    
+    /* width: 60%; */
+    height: 100vh;
+    border: 1px solid #111;
+    position: relative;
+    background-color: #111;
+    
+}
+.smallmain{
+    width: 30%;
+    border-radius:0px 350px 0px 0px;
+    position: relative;
+    height: 100vh;
+    order: 1px solid #FFC107;
+    background-color: #FFC107;
+
+}
+.smallmain .img{
+    position: absolute;
+    bottom: 40px;
+    right: 60%;
+    left: 20%;
+    height: 80vh;
+    width: 110%;
+    border-radius: 25px;
+    box-shadow: 10px 5px 10px 15px rgb(20, 20, 20);
+    
+}
+
+.menu{
+    width: 28px;
+    float: right;
+    height: 50px;
+    /* background-color: red; */
+    position: relative;
+    right:-750px;
+    top: 100px;
+}
+
+
+
+ul{
+    /* float: left; */
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 102px;
+    margin-top: 22px;
+    margin-right: 2px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #FFC107;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #fdfcfc;
+}
+
+
+
+.description{
+    width: 470px;
+    height: 10px;
+    
+    font-size: 20px;
+    position: absolute;
+    top: 130px;
+    left: 670px;
+    
+}
+
+
+.description .rcorners2 {
+    border-radius: 32px;
+    border: 2px solid #FFC107;
+    padding: 30px; 
+    width: 260px;
+    height: 25px; 
+    font-size: 16px; 
+    position: relative;
+
+    /* color: #fdfcfc; */
+    display: flex;
+  }
+  .rcorners2 img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+.rcorners2:hover{
+  background-color: #FFC107;
+}
+
+
+/* .header {
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 200px);
+    top: 100px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+  }
+  .header ul.icon-menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header ul.icon-menu li.icon-box {
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    margin: 20px 0;
+    border-radius: 50%;
+    background: #2b2a2a;
+      background-color: rgb(43, 42, 42);
+  }
+
+  .home .home-details h1::before, .about .resume-box .icon, .contact ul.social li a:hover, body.light.contact ul.social li a:hover, .preloader .loader, .blog .page-link:hover, .blog .page-item.active .page-link, body.light.blog .page-link:hover, body.light.blog .page-item.active .page-link, .portfolio .grid li figure div, .header ul.icon-menu li.icon-box.active, .header ul.icon-menu li.icon-box:hover, body.light .header ul.icon-menu li.icon-box.active, body.light .header ul.icon-menu li.icon-box:hover, .btn, .header .icon-box h2, .home .color-block, .title-section hr, .portfolio .slideshow .carousel-indicators li.active, .button::before, .button-icon {
+    background-color: #ffb400;
+  }
+
+
+  .header ul.icon-menu li.icon-box.active, .header ul.icon-menu li.icon-box:hover, .header ul.icon-menu li.icon-box.active i, .header ul.icon-menu li.icon-box:hover i {
+    color: #fff;
+  }
+
+  .fa-briefcase::before {
+    content: "\f0b1";
+  } */
+
+  .home .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    height: 50px;
+    /* background-color: #FFC107; */
+    color: #FFC107;
+    /* text-align: center; */
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    
+    /* z-index: -2; */
+  }
+  
+  .home:hover .tooltiptext {
+    visibility: visible;
+  }
