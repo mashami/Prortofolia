@@ -147,6 +147,7 @@
     /* background-color: red; */
     /* gap: 10px; */
     flex-direction: column;
+
 }
 .maingaller{
     gap: 25px;
@@ -225,7 +226,7 @@ div.gallery {
     transition: width 0.4s ease-in-out;
   }
   
-
+  
   .formall .rcorners2 {
     border-radius: 35px;
     border: 2px solid #FFC107;
@@ -259,13 +260,14 @@ textarea {
     height: 180px;
     padding: 12px 20px;
     box-sizing: border-box;
-    /* border: 1px solid rgb(246, 245, 245); */
+    border: 1px solid rgb(246, 245, 245);
     border-radius: 45px;
     background-color: rgba(149, 145, 145, 0.067);
     font-size: 16px;
     resize: none;
     color:rgb(135, 129, 129);
   }
+  
 
 .icons a{
     text-decoration: none;
@@ -302,3 +304,39 @@ textarea {
   .home:hover .tooltiptext {
     visibility: visible;
   }
+
+
+  .pernalInfo .rcorners4 {
+    border-radius: 55px;
+    border: 2px solid #FFC107;
+    padding: 27px; 
+    width: 218px;
+    height: 21px; 
+    font-size: 16px; 
+    position: relative;
+
+    /* color: #fdfcfc; */
+    display: flex;
+  }
+  .rcorners4 a{
+    text-align: center;
+  }
+  .rcorners4 img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+  }
+.rcorners4:hover{
+  background-color: #FFC107;
+  
+}
+
+
+
+
+
+
+
+
+
