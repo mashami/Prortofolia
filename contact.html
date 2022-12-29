@@ -7,6 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
     <title>contact</title>
+
+<script>
+
+        function validaEmail() {
+            var mail = document.getElementById("text1").value;
+            var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+            // var regx =  /[\w][a-zA-Z0-9_\-\.]+[@][a-z]+[\.]+[a-z]{2,3}/
+            
+            if (mail.match(regx)){
+                document.myForm.Email.focus()
+                return true
+            } else {
+                return false
+            }
+        }
+        function Validate() {
+
+            if (document.myForm.email.value == "") {
+                alert("please provide your Email ID");
+                document.myForm.email.focus()
+
+                //validateRegex pattern="[\w][a-zA-Z0-9_\-\.]+[@][a-z]+[\.]+[a-z]{2,3}">
+                return false
+           
+            } else if (document.myForm.text1.value == "") {
+                alert("please provide names.");
+                document.myForm.text1.focus();
+                return false
+
+
+            }else if (document.myForm.text.value == "") {
+                alert("please provide your subject");
+                document.myForm.text.focus();
+                return false 
+
+            }else if (document.myForm.text2.value == "") {
+                alert("please provide your message to us");
+                document.myForm.text2.focus();
+                return false 
+            }else {
+                alert("Thank you very much your message has been recieved!");
+                return true
+            }
+
+        }
+    </script>
+
 </head>
 
 <body>
@@ -104,19 +151,15 @@
 
             </div>
 
-            <form class="formall">
+            <form class="formall" action="contact.html" name="myForm" onsubmit="return(Validate());">
                 <div class="formone">
 
                     <div style="display: flex;gap: 15px;">
-                        <input type="text" name="text" placeholder="Enter Names Here">
+                        <input type="text" name="text1" placeholder="Enter Names Here">
 
 
                         <input type="email" name="email" placeholder="Enter Email Here"
                         id="email">
-                        
-                        
-                        
-                         
                           
                         <input type="text" name="text" placeholder="Enter subject Here">
 
@@ -126,14 +169,14 @@
 
                 <div class="formtwo">
                     <div>
-                        <textarea placeholder="Enter your message Here"></textarea>
+                        <textarea placeholder="Enter your message Here" name="text2"></textarea>
                     </div>
                     <br>
                     <br>
 
                     <div class="rcorners2">
                         
-                       <button value="#" ><b>SEND</b>
+                       <button value="#" onclick="validaEmail()"><b>SEND</b>
                         <!-- <b><a href="contact.html" style="color: white;">SEND -->
                         </b>
                         <img src="Group 38(1).png" style="width: 60px; border-radius:100px 100px 100px 100px;">
