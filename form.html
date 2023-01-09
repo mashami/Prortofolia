@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(91, 88, 88);
+    /* background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(taking-medicine.webp); */
+    background-position: center;
+    
+}
+
+.main{
+    background-color: red;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(taking-medicine.webp);
+    background-position: center;
+    /* background-color: aqua; */
+    background-size: cover;
+    height: 100vh;
+}
+        .heading {
+            font-size: 40px;
+            text-align: center;
+            color: black;
+            margin-bottom: 40px;
+
+        }
+
+    .form{
+    width: 250px;
+    height: 390px;
+    background: linear-gradient(to top, rgba(177, 164, 164, 0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 5px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+    
+    <!-- <img src="" id = "rainbow" width="480"/> -->
+    <h1 style="color: #fff;" id="heading">FETCHING AN APIs</h1>
+    <div>
+        
+    <div id="form">
+        <label>Names</label>
+        <input id="rainbow"  type="text" name="" />
+        <label>BIRTH_YEAR</label>
+        <input id="rain"  type="text" name="" />
+        
+    </div>
+    </div>
+    <script>
+
+
+async function getName() {
+    const response = await fetch('https://swapi.dev/api/people/1/');
+    const data = await response.json();
+    console.log(data);
+    console.log(data.name);
+    document.getElementById('rainbow').value = data.name;
+}
+
+getName();
+
+async function getBith() {
+    const response = await fetch('https://swapi.dev/api/people/1/');
+    const data = await response.json();
+    console.log(data);
+    console.log(data.birth_year);
+    document.getElementById('rain').value = data.birth_year;
+}
+
+getBith();
+
+
+// async function getData() {
+//     for(let i = 1; i <= 10; i++) {
+//         const response = await fetch(`https://swapi.dev/api/people/${i}/`);
+//         const data = await response.json();
+//         console.log(data);
+//         console.log(data.name);
+//         document.getElementById('rainbow').value = data.name;
+//     }
+// }
+
+// getData();
+ 
+
+
+     
+    //  document.getElementById('rainbow').innerHTML=fetch();
+    //  const nv = document.getElementById('rainbow');
+    //  console.log(nv);
+    //  nv.value=name
+
+    //  console.log('about to fetch a rainbow');
+    //  fetch('https://swapi.dev/api/people/2')
+    //  .then (response => {
+    //     if (response.ok){
+    //     then (response => response.json())
+    //         console.log('SUCCESS')
+    //     } 
+      
+    //     else{
+    //         console.log('Not Successful')
+    //     }
+    // })
+        
+    //  .then (data => console.log(data))
+    //  .catch(error => console.log('Error'))
+    </script>
+</div>
+</body>
+</html>
