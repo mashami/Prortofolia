@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background: #121212;
+        }
+       
+        form,
+        .card {
+            display: flex;
+        }
+
+        form {
+            flex-direction: column;
+        }
+
+        input {
+            margin-right: 0.3rem;
+            margin-bottom: 0.3rem;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            color: rgb(249, 247, 246);
+            background-color: #c6820e;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .card input {
+            padding: 20px;
+        }
+
+        #answer {
+            width: 10%;
+            padding: 10px 25px;
+            border: 2px solid rgb(47, 57, 57);
+            height: 50px;
+            width: 287px;
+        }
+        @media screen and (max-width: 308px) {
+        /* @media screen and (max-width: 768px) { */
+            #answer {
+                width: 50%;
+            }
+        }
+        .calc {
+            align-items: center;
+            margin-left: 200px;
+        }
+        h3 {
+            text-align: center;
+            font-family: Ink Free;
+            color: antiquewhite;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h3>CALCULATOR</h3>
+    <form name="calc">
+        <input type="text" name="answer" id="answer">
+        <div class="card">
+            <input type="button" value="7" onclick="calc.answer.value +='7'">
+            <input type="button" value="8" onclick="calc.answer.value +='8'">
+            <input type="button" value="9" onclick="calc.answer.value +='9'">
+            <input type="button" value="*" onclick="calc.answer.value +='*'">
+            <input type="button" value="root" onclick="squareRoot()">
+            <input type="button" value="1/x" onclick="fraction()">
+        </div>
+        <div class="card">
+            <input type="button" value="4" onclick="calc.answer.value +='4'">
+            <input type="button" value="5" onclick="calc.answer.value +='5'">
+            <input type="button" value="6" onclick="calc.answer.value +='6'">
+            <input type="button" value="-" onclick="calc.answer.value +='-'">
+            <input type="button" value="del" onclick="del()">
+            <input type="button" value="+/-" onclick="signToggle()">
+        </div>
+        <div class="card">
+            <input type="button" value="1" onclick="calc.answer.value +='1'">
+            <input type="button" value="2" onclick="calc.answer.value +='2'">
+            <input type="button" value="3" onclick="calc.answer.value +='3'">
+            <input type="button" value="+" onclick="calc.answer.value +='+'">
+            <input type="button" value="%" onclick="percentage()">
+            <input type="button" value="0" onclick="calc.answer.value +='0'">
+        </div>
+        <div class="card">
+            <input type="button" value="/" onclick="calc.answer.value +='/'">
+            <input type="button" value="." onclick="calc.answer.value +='.'">
+            <input type="button" value="=" onclick="calc.answer.value=eval(calc.answer.value)">
+            <input type="reset" value="clear"/>
+            <input type="button" value="^2" onclick="power()">
+            <!-- <input type="button" value="()" onclick="parentheses()"> -->
+        </div>
+    </form>
+    </div>
+    
+</body>
+
+</html>
+<script src="script.js"></script>
