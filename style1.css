@@ -142,15 +142,60 @@
 .maingallery{
     gap: 25px;
     display: flex;
+    /* background-color: red; */
 }
+.maingalleryy{
+  gap: 25px;
+  display: flex;
+  /* background-color: red; */
+}
+
 .wow{
     /* background-color: red; */
     /* gap: 10px; */
     flex-direction: column;
+    
+}
+.wow img{
+  width: 100%;
+}
+.woww{
+  /* background-color: green; */
+  /* gap: 10px; */
+  flex-direction: column;
+  
+}
+.woww img{
+width: 100%;
 }
 .maingaller{
     gap: 25px;
     display: flex;
+}
+div.maingallery .gallery{
+  width: 100%;
+  /* background-color: red; */
+  height: 100%;
+
+    margin: 5px;
+    border: 2px solid #ccc;
+    float: left;
+    width: 220px;
+    gap: 25px;
+    border-radius: 15px;
+}
+div.maingallery .gallery{
+  /* background-color: red; */
+  height: 180px;
+}
+
+div.maingallery .gallery img{
+  width: 100%;
+  height: 100%;
+}
+div.maingallery .gallery:hover{
+  color: yellow;
+  z-index: 2px ;
 }
 div.gallery {
     margin: 5px;
@@ -159,6 +204,7 @@ div.gallery {
     width: 220px;
     gap: 25px;
     border-radius: 15px;
+    /* background-color: red; */
     /* display: flex; */
 
   }
@@ -171,12 +217,14 @@ div.gallery {
     width: 100%;
     height: auto;
     border-radius: 15px;
+    height: 60%;
   }
   
   div.desc {
     padding: 15px;
     text-align: center;
     color: white;
+    /* z-index: 20; */
   }
 
   .infomation{
@@ -225,18 +273,29 @@ div.gallery {
     transition: width 0.4s ease-in-out;
   }
   
-
+  
   .formall .rcorners2 {
     border-radius: 35px;
     border: 2px solid #FFC107;
     padding: 30px; 
-    width: 150px;
+    width: 160px;
     height: 25px; 
     font-size: 16px; 
     position: relative;
 
     /* color: #fdfcfc; */
     display: flex;
+  
+  }
+  .rcorners2 button{
+    text-align: center;
+    background-color: #111;
+    font-size: 22px;
+    color: white;
+    border: #111;
+  }
+  .rcorners2 button:hover{
+    background-color: #FFC107;
   }
   .rcorners2 a{
     text-align: center;
@@ -259,13 +318,14 @@ textarea {
     height: 180px;
     padding: 12px 20px;
     box-sizing: border-box;
-    /* border: 1px solid rgb(246, 245, 245); */
+    border: 1px solid rgb(246, 245, 245);
     border-radius: 45px;
     background-color: rgba(149, 145, 145, 0.067);
     font-size: 16px;
     resize: none;
     color:rgb(135, 129, 129);
   }
+  
 
 .icons a{
     text-decoration: none;
@@ -302,3 +362,45 @@ textarea {
   .home:hover .tooltiptext {
     visibility: visible;
   }
+
+  .rcorners4, .rcorners2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+
+  .pernalInfo .rcorners4 {
+    border-radius: 55px;
+    border: 2px solid #FFC107;
+    padding: 27px; 
+    width: 218px;
+    height: 21px; 
+    font-size: 16px; 
+    position: relative;
+
+    /* color: #fdfcfc; */
+    display: flex;
+  }
+  .rcorners4 a{
+    text-align: center;
+  }
+  .rcorners4 img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+  }
+.rcorners4:hover{
+  background-color: #FFC107;
+  
+}
+
+
+
+
+
+
+
+
+

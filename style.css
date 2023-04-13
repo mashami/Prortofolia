@@ -85,7 +85,13 @@ ul li a:hover{
     left: 670px;
     
 }
+ 
+.rcorners2{
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
 
+}
 
 .description .rcorners2 {
     border-radius: 32px;
@@ -103,6 +109,8 @@ ul li a:hover{
     position: absolute;
     right: 0;
     top: 0;
+    
+    
   }
 .rcorners2:hover{
   background-color: #FFC107;
@@ -172,3 +180,7 @@ ul li a:hover{
   .home:hover .tooltiptext {
     visibility: visible;
   }
+
+
+
+
